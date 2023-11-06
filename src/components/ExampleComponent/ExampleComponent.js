@@ -48,8 +48,13 @@ const ExampleComponent = () => {
           :
           <div></div>
       }
+      {
+        count !== 0 ?
+          <p style={{ width: "auto", margin: "0 100px", fontSize: "15px", backgroundColor: "#f0eee9", padding: "3px", borderRadius: "5px" }}>Last click: {new Date().toLocaleString()}</p>
+          :
+          <div></div>
+      }
 
-      <p style={{ width: "auto", margin: "0 100px", fontSize: "15px", backgroundColor: "#f0eee9", padding: "3px", borderRadius: "5px" }}>Last click: {new Date().toLocaleString()}</p>
     </>
   );
 };
