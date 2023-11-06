@@ -38,20 +38,18 @@ const ExampleComponent = () => {
 
   return (
     <>
-      <div style={{ fontSize: "20px" }}>You clicked <p style={{ fontSize: "100px" }}>{count}</p> times</div>
+      <div style={{ fontSize: "20px" }}>You clicked <p style={{ fontSize: "50px" }}>{count}</p> times</div>
       <Button variant="primary" className="btn my-5" onClick={handleClick}>
         Click me
       </Button>
       {
         count !== 0 ?
-        <Button variant="danger" onClick={resetCount}>
-        Reset
-      </Button>
-        :
-        <div></div>
+          <Button variant="danger" onClick={resetCount}>Reset</Button>
+          :
+          <div></div>
       }
 
-      <p style={{ fontSize: "15px" }}>Last click: {new Date().toLocaleString()}</p>
+      <p style={{ width: "auto", margin: "0 100px", fontSize: "15px", backgroundColor: "#f0eee9", padding: "3px", borderRadius: "5px" }}>Last click: {new Date().toLocaleString()}</p>
     </>
   );
 };
