@@ -46,7 +46,7 @@ const ExampleComponent = () => {
         count !== 0 ?
           <Button variant="danger" onClick={resetCount}>Reset</Button>
           :
-          <div></div>
+          <Button variant="secondary">Reset</Button>
       }
       {
         count !== 0 ?
