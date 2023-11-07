@@ -14,6 +14,11 @@ const ExampleComponent = () => {
     setCount(initialState);
   };
 
+  useEffect(() => {
+    // Actualiza el título del documento usando la API del navegador
+    document.title = `You clicked ${count} times`;
+  });
+  
   // El efecto se va a ejecutar con el montaje y con cada actualización
   /* useEffect(() => {
     console.log("mounted component")
