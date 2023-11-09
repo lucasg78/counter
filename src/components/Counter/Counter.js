@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
-import "./ExampleComponent.scss";
+import "./Counter.scss";
 
-const ExampleComponent = () => {
+const Counter = () => {
   const initialState = 0; // Estado inicial
   const [count, setCount] = useState(initialState);
 
@@ -64,4 +64,4 @@ const ExampleComponent = () => {
   );
 };
 
-export default ExampleComponent;
+export default Counter;
