@@ -18,28 +18,6 @@ const Counter = () => {
     // Actualiza el título del documento usando la API del navegador
     document.title = `You clicked ${count} times`;
   });
-  
-  // El efecto se va a ejecutar con el montaje y con cada actualización
-  /* useEffect(() => {
-    console.log("mounted component")
-  })
-   */
-
-  // El efecto se va a ejecutar sólo con el montaje
-  useEffect(() => {
-    console.log("mounted component")
-
-    return () => {
-      console.log("dismounted component") // Se va a ejecutar cuando el componente se desmonte
-    }
-  }, [])
-
-
-  // El efecto se va a ejecutar cada vez que se modifique el estado del contador
-  useEffect(() => {
-    console.log("updated component")
-  }, [count])
-
 
   return (
     <>

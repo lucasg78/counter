@@ -12,7 +12,7 @@ const App = () => {
     setShow(!show)
   }
 
-  const person = { name: "Lucas", age: 30, city: "New York" };
+  const person = { name: "Lucas" };
 
   return (
     <div className="App">
