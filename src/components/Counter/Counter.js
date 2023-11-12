@@ -22,7 +22,7 @@ const Counter = () => {
   return (
     <>
       <div style={{ fontSize: "20px" }}>You clicked <p style={{ fontSize: "50px" }}>{count}</p> times</div>
-      <Button variant="primary" className="btn my-5" onClick={handleClick}>
+      <Button variant="primary" className="btn my-2" onClick={handleClick}>
         Click me
       </Button>
       {
@@ -33,7 +33,7 @@ const Counter = () => {
       }
       {
         count !== 0 ?
-          <p style={{ width: "auto", margin: "0 100px", fontSize: "15px", backgroundColor: "#f0eee9", padding: "3px", borderRadius: "5px" }}>Last click: {new Date().toLocaleString()}</p>
+          <p style={{ width: "auto", margin: "0 100px", fontSize: "15px", backgroundColor: "#f0eee9", padding: "3px", borderRadius: "5px", marginTop: "10px"}}>Last click: {new Date().toLocaleString()}</p>
           :
           <div></div>
       }
